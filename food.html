@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Eats - Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add font-awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Additional CSS for food items */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .featured-dishes {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .dishes-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .food-item {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .food-item img {
+            width: 100%;
+            display: block;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .food-details {
+            background-color: #f9f9f9;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .food-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .food-price {
+            font-size: 1rem;
+            color: #ff4500; /* Orange color for price */
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Eats</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="food" class="featured-dishes">
+        <h2>Featured Dishes</h2>
+        <div class="dishes-container">
+            <!-- Food Items -->
+            <div class="food-item">
+                <img src="food1.jpg" alt="Chaat">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Chaat</div>
+                    <div class="food-price">100/-</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="food2.jpg" alt="Ragi Sangati">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Ragi Sangati</div>
+                    <div class="food-price">200/-</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="food3.jpg" alt="Paper Dosa">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Paper Dosa</div>
+                    <div class="food-price">25/-</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="food4.jpg" alt="Vada Pav">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Vada Pav</div>
+                    <div class="food-price">50/-</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="food5.jpg" alt="Idly">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Idly</div>
+                    <div class="food-price">20/-</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="food6.jpg" alt="Naan">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Naan</div>
+                    <div class="food-price">55/- single one</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="food7.jpg" alt="Aloo Gobi">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Aloo Gobi</div>
+                    <div class="food-price">120/-</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="food8.jpg" alt="Butter Chicken">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Butter Chicken</div>
+                    <div class="food-price">220/-</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="food9.jpg" alt="Dal Tadka">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Dal Tadka</div>
+                    <div class="food-price">200/-</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="food10.jpg" alt="Masala Dosa">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <div class="food-details">
+                    <div class="food-name">Masala Dosa</div>
+                    <div class="food-price">50/-</div>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="btn">Back to Home</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Delicious Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>
